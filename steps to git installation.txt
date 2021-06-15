@@ -1,0 +1,17 @@
+go to my computer/this pc
+go to c drive
+go to program files
+go to git folder
+go to usr folder
+go to bin folder
+now copy the path on the bar
+now close all the windows
+right click on this pc/my computer
+select properties
+select advance system settings
+select environment variables
+now go to system variables and click on path and see if it turns blue
+click on edit
+click on new
+now right click and paste
+press ok for all the options
