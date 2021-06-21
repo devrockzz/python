@@ -17,5 +17,3 @@ else:
         fact = fact * i
 
     print(" Factorial of " , n , " is : " , fact)     
-
- 
