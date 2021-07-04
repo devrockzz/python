@@ -1,2 +1,15 @@
-a = "Hello, World!"
-print(a[0],a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12])
+n = int(input()) #input() function takes input as string type
+                #int() converts it to integer type
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+print(fact)
+
+n = int(input())
+ans={i : i*i for i in range(1,n+1)}
+print(ans)
+
+
+#https://github.com/darkprinx/break-the-ice-with-python/blob/master/Status/Day%201.md
+#https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+#https://github.com/darkprinx/break-the-ice-with-python/blob/master/Status/Day%201.md
