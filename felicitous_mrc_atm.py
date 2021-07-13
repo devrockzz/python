@@ -1,4 +1,4 @@
-print("Welcome to Felicitous Bank ATM.")
+print("Welcome to Felicitous Bank ATM.")  #pleasing and fortunate
 balance = 5000
 chance = 2
 restart ="Y"
