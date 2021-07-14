@@ -1,6 +1,6 @@
 print('Welcome to Wayne Bank ATM')
-restart = ('Y')
-chance = 3
+restart = "Y", "y"
+chance = 2
 balance = 50000
 while chance >=0:
     pin = int(input('Please Enter your 4 digit pin:'))
@@ -16,10 +16,11 @@ while chance >=0:
                print('your balance is Rs:',balance,'\n')
                break
             elif option == 2:
-                withdrawal = int(input('How Much would you like to WithDraw?'))
+                withdrawal = int(input("How much money you want to withdraw??"))
                 while withdrawal <= balance:
                     balance = balance - withdrawal
                     print("woohoo, You have only: ", balance,"left with you!\n")
+                    break
             elif option == 3:
                 Pay_in = float(input('How much would you like to pay In ?:'))
                 balance = balance + Pay_in
