@@ -14,20 +14,27 @@ while chance >=0:
             option = int(input('What would you like to choose?'))
             if option == 1:
                print('your balance is Rs:',balance,'\n')
-               break
+               restart = input('Would you like to go back?') 
+               if restart in  ('n','No','no','N'): 
+                    print('Thank you!') 
             elif option == 2:
                 withdrawl = float(input('How Much you would  like to withdrawl?'))
                 if withdrawl in  [10,20,30,40,50,100]:
                     balance = balance - withdrawl
                     print('\n your balance is now: ',balance)
-                    break
+                    restart = input('Would you like to go back?') 
+                if restart in  ('n','No','no','N'): 
+                    print('Thank you!') 
                 elif withdrawl not in [10,20,30,40,50,100]:
-                 print('Invalid Amount, please Re-try\n')
-                 restart = "Y"
+                    print('Invalid Amount, please Re-try\n')
+                    restart = "Y"
             elif option == 3:
                 Pay_in = float(input('How much would you like to pay In ?:'))
                 balance = balance + Pay_in
-                break
+                print("total balance",balance)
+                restart = input('Would you like to go back?') 
+                if restart in  ('n','No','no','N'): 
+                    print('Thank you!') 
             elif option == 4:
                 print('Please wait while you card is returned \n')
                 print('Thank you!')
