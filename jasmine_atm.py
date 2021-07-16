@@ -8,6 +8,12 @@ BALANCE = 5000
 
 while CHANCE >= 0:
 
+  if RESTART in "noNoNO":
+
+    print(" \n Thank you! Have a nice day. \n")
+
+    break
+
   print(" \n You have " , CHANCE , " chances ")
 
   PIN = int(input("\n Please enter your 4 digit PIN: "))
@@ -16,7 +22,7 @@ while CHANCE >= 0:
 
     print("\n You have entered the pin correctly !")
 
-    while RESTART not in ('n' , 'N' , 'no' , 'No'):
+    while RESTART not in "noNoNO":
 
       print("\n Press 1 for your Balance \n")
 
@@ -34,9 +40,9 @@ while CHANCE >= 0:
 
         RESTART = input("\n Would you like to go back? ")
 
-        if RESTART in ('Y'):
+        if RESTART in "yesYESYes":
 
-            break
+          continue
 
       elif OPTION == 2:              
 
@@ -51,8 +57,12 @@ while CHANCE >= 0:
         else:
 
           print("\n Insufficient Balance \n")
-        
-        break
+
+        RESTART = input("\n Would you like to go back : ")
+
+        if RESTART in "yesYESYes" :
+
+          continue
 
       elif OPTION == 3:
 
@@ -70,15 +80,15 @@ while CHANCE >= 0:
 
         RESTART = input("\n Would you like to go back? ")
 
-        if RESTART in ('Y'):
+        if RESTART in "yesYESYes":
 
-            break
+          continue
         
       elif OPTION == 4:
 
           print("\n Please wait...Collect your card \n")
 
-          print("Thank You! Have a nice day")
+          RESTART = 'no'
 
           break
         
@@ -98,3 +108,4 @@ while CHANCE >= 0:
         print("You have no chance")
 
         break
+     
