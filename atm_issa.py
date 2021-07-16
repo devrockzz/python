@@ -24,12 +24,12 @@ while chance >=0:
             elif option == 3:
                 Pay_in = float(input('How much would you like to pay In ?:'))
                 balance = balance + Pay_in
+                print("your updated balance is", balance)
                 break #the error in option 3 was there was no _ in the declaration part.
             elif option == 4:
                 print('Please wait while you card is returned \n')
                 print('Thank you!')
                 break
-        
     elif pin != ('1111'):
         print('Incorrect Password')
         chance = chance - 1

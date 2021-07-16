@@ -9,58 +9,67 @@ balance = 5000
 
 while chance >= 0:
 
+  if restart in "noNoNO":
+
+    print("\nThank you! Have a nice day.\n")
+
+    break
+
   print("You have" , chance , "chances\n")
 
   pin = int(input("Please enter your 4 digit pin: "))
 
   if pin == 1234:
 
-    while restart not in ('n' , 'N' , 'no' , 'No'):
+    print("\nYou have entered pin correctly\n")
+
+    while restart not in "noNoNO":
 
       print('\nPlease press 1 for cheack balance\n')
 
-      print('Please press 2 to make a withdral\n')
+      print('\nPlease press 2 to make a withdrawl\n')
 
-      print('Please press 3 to deposit\n')
+      print('\nPlease press 3 to a deposit\n')
 
-      print('Please 4 to return card\n')
+      print('\nPlease press 4 to return card\n')
 
-      option = int(input('What would you like to choose: '))
+      option = int(input('\nWhat would you like to choose: '))
 
       # Cheack Balance 
 
       if option == 1:
 
-        print('Your balance is Rs: \n' , balance)
+        print('\nYour balance is Rs: ' , balance  )
 
-        restart = input('Would you like to go back: ')
+        restart = input('\nWould you like to go back: ')
 
-        if restart in ('y' , 'Y' , 'yes' 'Yes'):
+        if restart in "yesYESYes":
 
-          break
-
-        # Withdrawl Money 
+            continue
+ 
+      # Withdrawl Money 
 
       elif option == 2:
 
-        withdrawl_amount = int(input("Please enter amount for withdrawl: "))
+        withdrawl_amount = int(input("\nPlease enter amount for withdrawl: "))
 
         if(balance - withdrawl_amount >= 1000 and withdrawl_amount < balance):
 
           balance = balance - withdrawl_amount
 
-          print('Your balance' , balance)
+          print('\nYour balance' , balance)
 
         else:
 
-          print("Insufficient balance\n")
+          print("\nInsufficient balance\n")
 
+        restart = input("\nWould you like to go back: ")
 
-        if restart in ('Y' 'Yes'):
+        if restart in "yesYESYes":
 
-            break
- 
-          # Deposit Money 
+          continue
+
+      #  Deposit Money  
 
       elif option == 3:
 
@@ -70,29 +79,31 @@ while chance >= 0:
 
           balance = balance + deposit_money
 
-          print("Balance is: " , balance)
+          print("\nBalance is Rs.: " , balance)
 
         else:
 
-          print("Enter valid amount\n")
+          print("\nEnter valid amount\n")
 
-        if restart in ('Y'):
+        restart = input('\nWould you like to go back: ')  
 
-            break
+        if restart in "yesYESYes":
+
+           continue
+
+      #  Collect Card    
 
       elif option == 4:
 
-        print("\n Please wait...Collect your card \n")
+        print("\nPlease wait...Collect your card")
 
-        print("Thank You! Have a nice day")
+        restart = 'no'
 
         break
    
+      else:
 
-    else:
-
-         print("Please enter a correct option\n")
-
+        print("\nPlease enter a correct option\n")
 
   else:
 
@@ -102,13 +113,12 @@ while chance >= 0:
 
     if chance == 0:
 
-      print("You have no more chance\n")
-
       break
 
-        
 
-        
+            
+
+            
 
         
 

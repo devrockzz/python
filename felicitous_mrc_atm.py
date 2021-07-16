@@ -20,11 +20,17 @@ while chance >=0:
                 if withdrawl in [10,20,50,100,500,100]:
                     balance = balance - withdrawl
                     print("Niece/Nephew, You have only: ", balance,"left with you!\n")
+                    restart = input("Would you like to go back do every step all over again?")
+                    if restart in ['N','n','No','NO']:
+                        print("Okay Niece/nephew, Take care...Thank you. Bbye!\n")
                     break
             elif option == 3:
                 pay_in = int(input("How much money you want to enroll:"))
                 balance = balance + pay_in
                 print("Fuiyyoo...Your balance is: ", balance, "\n")
+                restart = input("Would you like to go back and do all the steps all over again?\n")
+                if restart in ['N','n','No','NO']:
+                    print("Okay Niece/Nephew, Take care...Thank you. Bbye\n")
                 break
             elif option == 4:
                 print("Please collect your card")
