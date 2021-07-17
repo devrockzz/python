@@ -27,14 +27,15 @@ while chance >=0:
                     if restart in  ('n','No','no','N'):
                         print('Thank you!')
                         break
-            elif withdrawl !=  [10,20,30,40,50,100]:
-                 print('Invalid Amount, please Re-try\n')
-                 restart = ('Y')
-            elif withdrawl == 1:
-                 withdrawl = float(input('Please Enter Desired Amount:'))
+                elif withdrawl !=  [10,20,30,40,50,100]:
+                    print('Invalid Amount, please Re-try\n')
+                    restart = ('Y')
+                elif withdrawl == 1:
+                    withdrawl = float(input('Please Enter Desired Amount:'))
             elif option == 3:
                 Pay_in = float(input('How much would you like ton pay In ?:'))
                 balance = balance + Pay_in
+                print('Your current balance is',balance,'\n')
                 if restart in  ('n','No','no','N'):
                                 print('Thank you!')
                                 break
