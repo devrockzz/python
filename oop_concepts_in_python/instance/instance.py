@@ -2,7 +2,6 @@
 # demonstrate instantiating
 # a class
  
- 
 class Dog:
      
     # A simple class
@@ -18,6 +17,8 @@ class Dog:
 # Driver code
 # Object instantiation
 Rodger = Dog()
+
+
  
 # Accessing class attributes
 # and method through objects
