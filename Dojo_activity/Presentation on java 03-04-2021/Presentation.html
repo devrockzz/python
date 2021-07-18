@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation of java</title>
+
+    <!-- Favicon Attach  -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/apple-touch-icon.png">
+    <link rel="manifest" href="Favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="Favicon/favicon-32x32.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Presentation.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>What are the fetures of oops that java does't support</h1>
+
+        <hr>
+
+        <ul>
+
+            <li><p>Object Oriented Programing concepts says that the program which we are write should be in the form of <kbd class="style2kbd">objects</kbd> and <kbd class="style2kbd">classes</kbd>.<br>
+            That means the program is divided into classes and each class can contain variables and methods , if we want to access the variables and methods by using the object of that class we can accsess. </p></li>
+
+        </ul>
+
+        <h3>1 : Primitive data types</h3>
+
+        <ul>
+
+            <li>
+
+                <p>In java there are  8 primitive datatypes.</p>
+
+            </li>
+
+        </ul>
+
+            <ul id="ul">
+
+                <li>int</li>
+                <li>float</li>
+                <li>char</li>
+                <li>double</li>
+                <li>boolean</li>
+                <li>byte</li>
+                <li>short</li>
+                <li>long</li>
+
+            </ul>
+
+            <pre id="pre1">int a = 12;</pre>
+
+            <ul>
+
+                <li>
+
+                    <p>When we declare a variable in our program like int a = 12; , in this statement there is nothing any class and object concepts.But oop says that evrything should be in the form of object and classes.</p>
+
+                </li>
+
+            </ul>
+
+            <ul>
+
+                <li>
+
+                    <p>So in this senario java fails to support the feature of oop beacause of using primitive data types. </p>
+
+                </li>
+
+            </ul>
+
+            <hr>
+
+            <h3>2 : Multiple Inheritance</h3>
+
+            <ul>
+
+                <li>
+                    <p>
+
+                        Multiple inheritance is one of the fetures of object oriented concept , where a class can inherit properties of more than one parent class.
+
+                    </p>
+
+                </li>
+
+                <li><p>
+
+                    In multiple inheritance the problem occurs when methods having same name.This will give an error.
+                </p></li>
+
+            </ul>
+
+            <h3>Example - 1</h3>
+
+<pre class="style2kbd" >
+import java.io.*;
+
+class Parent1{
+
+    void print(){
+
+        System.out.println("Inside Parent1 class");
+
+    }
+
+}
+
+class Parent2{
+
+    void print(){
+
+        System.out.println("Inside Parent2 class");
+
+    }
+
+}
+
+class Child extends Parent1 , Parent2{
+
+    public static void main(String arg[]){
+
+        Child c = new Child();
+
+        c.print();
+
+    }
+
+}
+</pre>
+
+<pre class="bg-danger">
+Error:
+
+    Child.java:23: error: '{' expected
+    class Child extends Parent1 , Parent2{
+</pre>
+
+<ul>
+
+    <li><p>The above program will give an error because multiple inheritance is not supported by java.</p></li>
+
+</ul>
+
+<ul>
+
+    <li><p>In this case the compiler wiil confuse because which print() method of which class parent1 or parent2 will executes , so this generates an ambiguity</p></li>
+    
+    <li><p>So because of this ambiguity multiple inheritance concept is eliminated from java.</p></li>
+
+</ul>
+       
+    </div>
+    
+</body>
+</html>

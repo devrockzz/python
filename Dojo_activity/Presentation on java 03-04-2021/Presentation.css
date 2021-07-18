@@ -1,0 +1,45 @@
+
+
+.style2kbd{
+
+    background-color:lightgreen;
+    color:red;
+    font-size: 90%;
+    border-radius: 3px;
+
+}
+
+h1{
+
+    color:brown;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+h3{
+
+    color: darkgoldenrod;
+}
+
+p{
+    font-size: 18px;
+    line-height: 25px;  
+}
+
+#ul li{
+
+    list-style-type:'⇒';
+}
+
+#pre1{
+
+    background-color: lightgreen;
+    color:red;
+    width:30%;
+}
+
+.pre{
+
+    width: 70%; 
+}
