@@ -1,7 +1,6 @@
 # Derived class
 
 #from oop_language.multilevel_inheritance.motherClass import Mother
-
 import motherClass
 
 class Doughter(motherClass.Mother):
