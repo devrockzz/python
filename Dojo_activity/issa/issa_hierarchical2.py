@@ -1,14 +1,14 @@
-import issa_hierarchical
+import issa_hierarchical1
 #child class 1
-class dior(issa_hierarchical.brands):
+class dior(issa_hierarchical1.brands):
  def func2(self):
         print("the latest dior haut couture is awesome")
 #child class 2
-class versace(issa_hierarchical.brands): 
+class versace(issa_hierarchical1.brands): 
    def func3(self):
         print("the new summer collection is lit.")
 #child class 3
-class chanel(issa_hierarchical.brands):   
+class chanel(issa_hierarchical1.brands):   
     def func4(self):
         print("the new floral perfume is nostalgic")
 o1 = dior()
