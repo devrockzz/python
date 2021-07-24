@@ -6,7 +6,8 @@ class food():
        
  
     def show(self):
-        print(self) #decode
+        print(self)
+        print(self.__dict__)
         print("fruit is", self.fruit)
         print("color is", self.color )
         
